@@ -28,9 +28,9 @@ const Navber = () => {
             </div>
 
 
-            <ul className={`${open ? 'top-6':'-top-60'} md:flex mb-5 px-10 duration-1000 absolute`}>
+            <ul className={`${open ? 'top-6':'-top-60'} md:flex mb-5 px-10 duration-1000 absolute md:static`}>
                 {
-                    routes.map(route => <li key={route.id} className="mr-2">
+                    routes.map(route => <li key={route.id} className="mr-2 hover:bg-yellow-500">
                         <a href={route.path}>{route.name}</a>
                     </li>)
                 }
