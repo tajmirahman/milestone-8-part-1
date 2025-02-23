@@ -1,9 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { BarChart, Bar, ResponsiveContainer, XAxis, YAxis, Tooltip, Legend } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from 'recharts';
+
+import { ToastContainer, toast } from 'react-toast'
 
 
 const Phones = () => {
+    const wave = () => toast.error('Hi there 👋')
 
     const [phones, setPhones]=useState([]);
 
@@ -38,6 +41,10 @@ const Phones = () => {
 
     return (
         <div>
+            <div>
+            <button onClick={wave} className="px-2 py-2 border-2 border-gray-100 bg-red-50">Notification Btn</button>
+            <ToastContainer />
+            </div>
             <h2 className="text-5xl">Phones- {phones.length}</h2>
 
             <div>
