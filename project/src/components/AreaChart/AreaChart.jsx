@@ -1,4 +1,4 @@
-import { AreaChart as AcChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { AreaChart as AcChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Legend, } from 'recharts';
 
 
 const AreaChart = () => {

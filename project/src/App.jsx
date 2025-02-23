@@ -2,6 +2,7 @@
 import AreaChart from "./components/AreaChart/AreaChart"
 import LineCharts from "./components/LineCharts/LineCharts"
 import Navber from "./components/Navber/Navber"
+import Phones from "./components/Phones/Phones"
 import PriceOptions from "./components/PriceOptions/PriceOptions"
 
 
@@ -16,6 +17,7 @@ function App() {
       <PriceOptions></PriceOptions>
       <LineCharts></LineCharts>
       <AreaChart></AreaChart>
+      <Phones></Phones>
 
 
     </>
