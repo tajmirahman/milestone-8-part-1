@@ -1,4 +1,4 @@
-import { LineChart as LCchart, Line, XAxis, YAxis } from 'recharts';
+import { LineChart as LCchart, Line, XAxis, YAxis,Tooltip,Legend } from 'recharts';
 
 
 const LineCharts = () => {
@@ -22,6 +22,8 @@ const LineCharts = () => {
             <LCchart width={800} height={400} data={mathMarksData}>
                 <XAxis dataKey={'name'}></XAxis>
                 <YAxis></YAxis>
+                <Tooltip />
+                <Legend />
                 <Line dataKey="math" stroke='red'></Line>
                 <Line dataKey="physics" stroke='blue'></Line>
                 <Line dataKey="chemistry" stroke='yellow'></Line>
